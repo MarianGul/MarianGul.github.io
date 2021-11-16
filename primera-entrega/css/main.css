@@ -1,0 +1,138 @@
+:root {
+    --clr-gray:#636363;
+    --clr-light-gray:#B7B7B7;
+    --clr-dark-green:#379339;
+    --clr-green:#92EA98;
+    /*--clr-green:#b8e073;*/
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-gray);
+    font-weight: 300;
+}
+
+/*nav*/
+
+.bg-green {
+    background-color: var(--clr-green);
+}
+
+
+/*header*/
+
+.header-store {
+    background: url('../imgs/header.jpg');
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    margin-top: 60px;
+}
+
+/*card*/
+
+.card-footer {
+    background-color: transparent;
+}
+
+.card-footer .cantidad {
+    width: 80px;
+    border: 1px solid var(--clr-light-gray);
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+    border-top: solid 4px var(--clr-green);
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.precio {
+    font-weight: 600;
+    color: var(--clr-dark-green);
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: all 0.5s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+/*buttons*/
+
+.btn {
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+}
+
+.btn-compra {
+    color: #fff;
+    background-color: var(--clr-green);
+    border-color:  var(--clr-green);
+    font-weight: 600;
+}
+
+
+/*form*/
+
+.form-check-input:checked {
+    background-color: var(--clr-green);
+    border-color: var(--clr-green);
+}
+
+.form-check {
+    margin-bottom: 0.3rem;
+}
+
+.form-check-input:focus {
+    border-color: var(--clr-green);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(166 210 171 / 25%);
+}
+
+/*typography*/
+
+.bold {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+/*border*/
+
+.border-green {
+    border-bottom:solid 3px var(--clr-green);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-store {
+        background: url('../imgs/header-mobile.jpg');
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+        margin-top: 60px;
+    }
+    
+}
