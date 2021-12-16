@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Pet Store</title>
 
+</head>
+<body>
+  <div id="productoComprado">
+    <button type="button" class="btn-close float-end" id="btn-close-producto"></button>
+    <div class="productoComprado-content">
+    </div>
+    <div class="productoComprado-footer">
+      <p>¡Agregado al carrito con exito!</p>
+    </div>
+  </div>
+  <div class="modal" id="contentCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="carrito">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-light bg-green fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h1><span>Pet</span> Shop</h1>
+          </a>
+            <div class="icon-carrito" data-bs-toggle="modal" id="mostrarCarrito" data-bs-target="#contentCarrito">
+              <div class="numberCompra">
+                <span id="total" class="badge rounded-pill">0</span>
+              </div>
+              <img src="imgs/cart.svg">
+            </div>
+        </div>
+      </nav>
+      <header class="header-store">
+      </header>
+      <main>
+        <div class="container-fluid bg-light-green">
+          <div class="row justify-content-center pt-4">
+            <div class="col-md-3 mb-4 text-center">
+              <a href="#" data-categoria="todos" class="categoria todos active"></a>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+              <a href="#" data-categoria="perro" class="categoria perro"></a>
+            </div>
+            <div class="col-md-3 mb-4 text-center">
+              <a href="#" data-categoria="gato" class="categoria gato"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-md-2">
+              <div class="filtro" id="filtro">
+                <h5 class="mb-3 bold">Categorias</h5>
+                <div id="subcategoria">
+                  <!--sub categorias-->
+                </div>
+                <button class="btn btn-aplicar btn-sm mt-3 mb-3">Aplicar</button>
+              </div>
+            </div>
+            <div class="col-md-10 mb-5">
+              <div class="row" id="productos-container">
+                <!--productos-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
