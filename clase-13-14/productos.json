@@ -2,7 +2,7 @@
       {
         "id":1,
         "nombre":"Excellent Gato Chicken & Rice",
-        "categoria":"perro",
+        "categoria":"gato",
         "subcategoria":"alimento",
         "precio":2500,
         "stock":25,
