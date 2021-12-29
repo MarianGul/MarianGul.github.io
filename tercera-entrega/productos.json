@@ -1,0 +1,282 @@
+[
+      {
+        "id":1,
+        "nombre":"Excellent Gato Chicken & Rice",
+        "categoria":"gato",
+        "subcategoria":"alimento",
+        "precio":2500,
+        "stock":25,
+        "descripcion": "Alimento balanceado",
+        "imagen": "excellent-gato.jpg"
+      },
+      {
+        "id":2,
+        "nombre":"Old Prince Novel Gato Adulto",
+        "categoria":"gato",
+        "subcategoria":"alimento",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Alimento balanceado",
+        "imagen": "old-prince-gato.jpg"
+      },
+      {
+        "id":3,
+        "nombre":"Pro Plan Pollo Perro Adulto",
+        "categoria":"perro",
+        "subcategoria":"alimento",
+        "precio":2000,
+        "stock":25,
+        "descripcion": "Alimento balanceado",
+        "imagen": "pro-plan.png"
+      },
+      {
+        "id":4,
+        "nombre":"Excellent Perro Chicken & Rice",
+        "categoria":"perro",
+        "subcategoria":"alimento",
+        "precio":1200,
+        "stock":10,
+        "descripcion": "Alimento balanceado",
+        "imagen": "excellent.png"
+      },
+      {
+        "id":5,
+        "nombre":"Old Prince Perro Adulto",
+        "categoria":"perro",
+        "subcategoria":"alimento",
+        "precio":2300,
+        "stock":10,
+        "descripcion": "Alimento balanceado",
+        "imagen": "old-prince-perro.jpg"
+      },
+      {   
+        "id":6,
+        "nombre":"VitalCat Balanced para Gato Adulto",
+        "categoria":"gato",
+        "subcategoria":"alimento",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Alimento balanceado",
+        "imagen": "balanced-vital-cat.jpg"
+    },
+
+    {   
+        "id":7,
+        "nombre":"Bife Flavor Bone",
+        "categoria":"perro",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "bite-flavor-perro.jpg"
+    },
+
+    {   
+        "id":8,
+        "nombre":"K9 Fitness Soga & Tpr Braided",
+        "categoria":"perro",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "fitness-soga-perro.jpg"
+    },
+
+    {   
+        "id":9,
+        "nombre":"Pelota Rubber Snack Ball 8cm",
+        "categoria":"perro",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "pelota-rubber.jpg"
+    },
+
+    {   
+        "id":10,
+        "nombre":"Dogs Soft Toy Aro",
+        "categoria":"perro",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "toy-aro.jpg"
+    },
+
+    {   
+        "id":11,
+        "nombre":"Dogs Soft Toy Key",
+        "categoria":"perro",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "toy-key.jpg"
+    },
+
+    {   
+        "id":12,
+        "nombre":"Juguete Torre Para Gatos",
+        "categoria":"gato",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "juguete-torre-gato.jpg"
+    },
+
+    {   
+        "id":13,
+        "nombre":"Ratón Saltarin",
+        "categoria":"gato",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "raton-saltarin.jpg"
+    },
+
+    {   
+        "id":14,
+        "nombre":"Cañita Con Elástico Pez Pluma",
+        "categoria":"gato",
+        "subcategoria":"juguetes",
+        "precio":1500,
+        "stock":10,
+        "descripcion": "Juguete",
+        "imagen": "canita-pez-pluma.jpg"
+    },
+
+    {   
+      "id":15,
+      "nombre":"Dúo Ratón De Hilo",
+      "categoria":"gato",
+      "subcategoria":"juguetes",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "duo-raton.jpg"
+    },
+
+    {   
+      "id":16,
+      "nombre":"Juguete Círculo de Juego Para Gatos",
+      "categoria":"gato",
+      "subcategoria":"juguetes",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "juguete-circulo.jpg"
+    },
+
+    {   
+      "id":17,
+      "nombre":"Hueso Dental Plus 7 Unidades",
+      "categoria":"perro",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "hueso-dental.jpg"
+    },
+
+    {   
+      "id":18,
+      "nombre":"Acondicionador Dermapet Hair Styling",
+      "categoria":"perro",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "acondicionador.jpg"
+    },
+
+    {   
+      "id":19,
+      "nombre":"Shampoo Free Natur Extra Bronce",
+      "categoria":"perro",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "shampoo.jpg"
+    },
+
+    {   
+      "id":20,
+      "nombre":"Paños Sanitarios 56x56 cm",
+      "categoria":"perro",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "panos-sanitarios.jpg"
+    },
+
+    {   
+      "id":21,
+      "nombre":"Mordillo Dental Dogit Gumi Hueso",
+      "categoria":"perro",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "mordillo-dental.jpg"
+    },
+
+    {   
+      "id":22,
+      "nombre":"Piedras Sanitarias Cancat Bentonita",
+      "categoria":"gato",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "piedras-sanitarias-cancat.jpg"
+    },
+
+    {   
+      "id":23,
+      "nombre":"Palita Sanitaria Pets",
+      "categoria":"gato",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "palita-sanitaria.jpg"
+    },
+
+    {   
+      "id":24,
+      "nombre":"Piedras Sanitarias Tidy Cats Convencional",
+      "categoria":"gato",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "tidy-cats.jpg"
+    },
+
+    {   
+      "id":25,
+      "nombre":"Shampoo Antiparasitario Pulguicida Osspret",
+      "categoria":"gato",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "shampoo-antiparasitario.jpg"
+    },
+
+    {   
+      "id":26,
+      "nombre":"Litera Cerrada Stefanplast Super Queen",
+      "categoria":"gato",
+      "subcategoria":"higiene",
+      "precio":1500,
+      "stock":10,
+      "descripcion": "Juguete",
+      "imagen": "litera-cerrada.jpg"
+    }
+]
