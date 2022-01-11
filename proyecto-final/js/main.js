@@ -200,7 +200,7 @@ function carritoNumeros () {
     carritoItems = JSON.parse(carritoItems);
     let numeroCarrito = document.getElementById('total');
 
-    if (carritoItems === null) {
+    if (carritoItems === null || carritoItems.length === 0) {
         numeroCarrito.style.display = 'none';
     } else {
         numeroCarrito.style.display = 'block';
@@ -209,7 +209,7 @@ function carritoNumeros () {
     }
 }
 
-function removeItem (e) {
+function borrarItem (e) {
     let carritoItems = localStorage.getItem("carrito");
     let resultadoCarrito = JSON.parse(carritoItems);
     let productContenedor = e.target.parentNode;
@@ -343,12 +343,12 @@ let containerCarrito = document.getElementById('contentCarrito');
 
 containerCarrito.addEventListener('click', function (e) {
     if (e.target.classList.contains('delete')) {
-        removeItem(e);
+        borrarItem(e);
         totalCompra();
     }
 });
 
- let carrito = [];
+
  let directorioImagen = 'imgs/'
  mostrarProductos();
  carritoNumeros();
