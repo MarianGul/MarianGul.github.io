@@ -1,0 +1,414 @@
+:root {
+    --clr-gray:#636363;
+    --clr-light-gray:#B7B7B7;
+    --clr-dark-green:#379339;
+    --clr-green:#92EA98;
+    /*--clr-green:#b8e073;*/
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-gray);
+    font-weight: 300;
+}
+
+/*modal*/
+
+#contentCarrito.modal {
+    justify-content: flex-end;
+}
+#contentCarrito .modal-dialog {
+    margin: 0px;
+}
+
+#contentCarrito .modal-content {
+    border-radius: 0px;
+}
+
+#contentCarrito .modal-header {
+    background-color: var(--clr-green);
+}
+
+#contentCarrito .modal-header h5 {
+    font-weight: 600;
+    color: white;
+}
+
+.icon-carrito {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icon-carrito img {
+    width: 40px;
+}
+
+.numberCompra {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.numberCompra .badge {
+    background-color: var(--clr-dark-green) !important;
+}
+
+#productoComprado {
+    padding: 10px;
+    border: 1px solid var(--clr-light-gray);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.productoComprado-footer {
+    text-align: center;
+}
+
+.productoComprado-footer p {
+   margin: 0px 0px 10px 0px;
+}
+
+.productoComprado-footer a {
+   width: 100%;
+ }
+
+.show-pr {
+    display: block;
+}
+
+.hide-pr {
+    display: none;
+}
+
+#carrito ul {
+    border-radius: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.carrito-nombre {
+    font-weight: 600;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    line-height: 1rem;
+}
+
+.carrito-descripcion {
+    font-size: 0.8rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carrito-data {
+    margin-right: 20px;
+    max-width: 230px;
+    flex: 1;
+}
+
+#carrito .delete {
+    background: url('../imgs/delete.svg');
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    margin-left: 10px;
+    background-position: center;
+    cursor: pointer;
+}
+
+#carrito .badge, #productoComprado .badge, #productosFinales .badge {
+    background-color: var(--clr-dark-green) !important;
+    border-radius: 50rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.precio-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+/*nav*/
+
+.bg-green {
+    background-color: var(--clr-green);
+}
+
+.bg-light-green {
+    background-color: #EEFFEE;
+}
+
+
+/*header*/
+
+.header-store {
+    background: url('../imgs/header.jpg');
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    margin-top: 60px;
+}
+
+/*card*/
+
+.card {
+    border-radius: 1.5rem;
+    outline: 1px solid lightgray;
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.card-footer {
+    background-color: transparent;
+}
+
+.card-footer .cantidad {
+    text-align: center;
+    border: none;
+    margin: 0px;
+    width: 40px;
+    height: 35px;
+}
+
+.card-body {
+    text-align: center;
+    border-top: solid 4px var(--clr-green);
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.precio {
+    font-weight: 600;
+    color: var(--clr-dark-green);
+}
+
+.card-image {
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.card-img-top {
+    transition: all 0.5s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+/*buttons*/
+
+.btn {
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+}
+
+.btn-compra, .btn-submit {
+    color: #fff;
+    background-color: var(--clr-green);
+    border-color:  var(--clr-green);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-compra:hover, .btn-submit:hover {
+    color: var(--clr-dark-green);
+    border-color:  var(--clr-green);
+    background-color: white;
+}
+
+
+/*form*/
+
+.form-check-input:checked {
+    background-color: var(--clr-green);
+    border-color: var(--clr-green);
+}
+
+.form-check {
+    margin-bottom: 0.3rem;
+}
+
+.form-check-input:focus {
+    border-color: var(--clr-green);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(166 210 171 / 25%);
+}
+
+/*typography*/
+
+.bold {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.categoria {
+    max-width: 180px;
+    height: 180px;
+    display: block;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.categoria.active {
+    opacity: 1;
+}
+
+.categoria:hover {
+    transform: scale(1.2);
+    transition: 0.2s all ease;
+    opacity: 1;
+}
+
+.categoria.gato {
+    background-image: url('../imgs/gato.png');
+}
+
+.categoria.perro {
+    background-image: url('../imgs/perro.png');
+}
+
+.categoria.todos {
+    background-image: url('../imgs/todos.png');
+}
+
+/*border*/
+
+.border-green {
+    border-bottom:solid 3px var(--clr-green);
+}
+
+/*input number*/
+
+.form-cantidad {
+    width: 120px;
+    border: 1px solid #a8a8a8;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.form-cantidad > * {
+    flex: 1;
+}
+
+.value-button {
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    color: var(--clr-dark-green);
+    height: 100%;
+    font-size: 20px;
+
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  .decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+
+  /*checkou*/
+.breadcrumb {
+    padding-top: 100px;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: var(--clr-gray);
+}
+
+.breadcrumb-item.active {
+    color: var(--clr-dark-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.errorContainer {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#productosFinales ul {
+    padding: 0px;
+}
+
+#productosFinales {
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-store {
+        background: url('../imgs/header-mobile.jpg');
+        background-size: cover;
+        height: 400px;
+        background-position: center;
+        margin-top: 60px;
+    }
+    
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Pet Shop</title>
+
+</head>
+<body>
+  <div class="modal" id="gracias" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          ¡Muchas gracias por tu compra!<br>
+          Te enviamos el detalle de tu compra a tu mail.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-submit" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <nav class="navbar navbar-light bg-green fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h1><span>Pet</span> Shop</h1>
+          </a>
+        </div>
+      </nav>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pago</li>
+              </ol>
+            </nav>
+            <h4 class="mb-3">Datos:</h4>
+          </div>
+            <div class="col-md-6">
+              <form id="form-checkout">
+                  <div class="mb-3 form-group">
+                    <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                    <input type="text" class="form-control" id="nombre">
+                    <div class="errorContainer"></div>
+                  </div>
+                  <div class="mb-3 form-group">
+                    <label for="apellido" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="email">
+                    <div class="errorContainer"></div>
+                  </div>
+                  <div class="mb-3 form-group">
+                    <label for="telefono" class="form-label">Telefono:</label>
+                    <input type="number" class="form-control" id="telefono">
+                    <div class="errorContainer"></div>
+                  </div>
+                  <div class="mb-3 form-group">
+                    <label for="direccion" class="form-label">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion">
+                    <div class="errorContainer"></div>
+                  </div>
+                <button type="submit" class="btn btn-submit">Finalizar Pedido</button>
+              </form>
+            </div>
+
+            <div class="col-md-6">
+              <div id="productosFinales">
+                <ul></ul>
+              </div>
+              <div class="footer-carrito mb-5">
+                <div class="precio-total">
+                  <span>Total:</span>
+                  <span class="total-valor"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
