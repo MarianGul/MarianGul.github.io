@@ -285,8 +285,8 @@ function sumarCantidad(e) {
   
 function restarCantidad(e) {
     let cantidad = e.target.parentNode.querySelector('.cantidad').value;
-    cantidad < 1 ? cantidad = 1 : '';
     cantidad--;
+    cantidad < 1 ? cantidad = 1 : '';
     e.target.parentNode.querySelector('.cantidad').value = cantidad;
 }
 
