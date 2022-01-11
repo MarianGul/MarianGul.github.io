@@ -16,7 +16,7 @@ function mostrarProductos() {
                 <small>${productos.descripcion}</small>
                 <h4 class="precio">$${productos.precio}</h4>
                 </div>
-                <div class="card-footer d-flex">
+                <div class="card-footer d-flex justify-content-between">
                 <div class="form-cantidad">
                 <div class="value-button decrease">-</div>
                 <input type="number" class="cantidad number" min="1" value="1" />
