@@ -40,6 +40,18 @@ function formCorrecto (elemento) {
     errorContenedor.innerText = '';
 }
 
+function validar () {
+    let formInputs = formCheckout.querySelectorAll('.form-group');
+    let resultado = true;
+    formInputs.forEach((inputs) => {
+        if(inputs.classList.contains('error')) {
+            resultado = false;
+        }
+    });
+
+    return resultado;
+}
+
 function mostrarCarrito () {
     let carritoItems = localStorage.getItem("carrito");
     carritoItems = JSON.parse(carritoItems);
@@ -76,17 +88,6 @@ function totalCompra () {
     totalCompra.textContent = `$${suma}`;
 }
 
-function validar () {
-    let formInputs = formCheckout.querySelectorAll('.form-group');
-    let resultado = true;
-    formInputs.forEach((inputs) => {
-        if(inputs.classList.contains('error')) {
-            resultado = false;
-        }
-    });
-
-    return resultado;
-}
 
 let nombre = document.getElementById('nombre');
 let email = document.getElementById('email');
@@ -101,18 +102,24 @@ input.forEach(item => {
 
 let formCheckout = document.getElementById('form-checkout');
 
+
+let modalGracias = document.getElementById('gracias')
+
 formCheckout.addEventListener('submit', (e) => {
     e.preventDefault();
     checkOut();
     if(validar() == true) {
-        var modalGracias = document.getElementById('gracias')
-        var modal = bootstrap.Modal.getOrCreateInstance(modalGracias) // Returns a Bootstrap modal instance
+        let modal = bootstrap.Modal.getOrCreateInstance(modalGracias);
+        localStorage.removeItem("carrito");
         modal.show();
     } 
 
 });
 
-let carrito = [];
+modalGracias.addEventListener('hidden.bs.modal', function (e) {
+    window.location.href = "index.html";
+})
+
 let directorioImagen = 'imgs/'
 mostrarCarrito();
 totalCompra();
